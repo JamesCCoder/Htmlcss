@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <title>Welcome to Bethany's pie shop!</title>
+    <style>
+        body{
+            margin-top: 0px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #e6e4d9; 
+            background-image: url("images/pattern.png");
+        }
+        #mainheader{
+            background-color:#a593c2;
+        }
+        nav{
+            height: 60px;
+            width:1000px;
+            margin:0 auto 20px;
+        }
+        #leftmenu{
+            float:left;
+            width:30%;
+            margin-bottom: 20px;
+        }
+        .searchbox{
+            padding:5px;
+            margin:10px 10px;
+            width:200px;
+        }
+        #main{
+            float:right;
+            width:70%;
+            margin-bottom: 20px;
+            
+        }
+        footer{
+            clear:both;
+            width:100%;
+        }
+
+        header,
+        section,footer,
+        aside,nav,main,
+        article,figure{
+            display:block;
+        }
+
+
+
+    </style>
+</head>
+<body>
+   <header id="mainheader">
+        <nav>
+            <!--<img src="images/pie.png" height="55"> -->
+            <img src="images/cake.svg" height="55" />
+        </nav>
+   </header>
+   <div style="width:1000px;margin-left:auto;margin-right:auto;">   <!--div is just for layout, no words, no color   -->
+       <aside id="leftmenu">                                        <!--here is the way of layouts divided into two parts, this way is replaced by flexbox-->
+             <img src="images/bethanylogo.png"/>
+             <header>                       
+                 <h4 style="text-align:center;">Browse our pies</h4>
+             </header>
+             <input type="search" class="searchbox" placeholder="Search our store"/>
+       </aside>
+       <main id="main">
+        
+       </main>
+       <footer>
+           <p>our address is:<address>1111 eee eee dr</address></p>
+        <small>2020 Bethany's Pie Shop - All rights reserved</small>
+       </footer>
+    </div>
+
+</body>
+</html>
+
+<!--
+     
+rules of float
+
+1. float makes element be out of "normal flow"
+2. first floating element will just be down the prior element
+3. second floating element will just follow the first one(right -> down)
+4. the rest elements that not floated will follow the original rules
+
+all: float element: start point from (1. prior is float: right-> down  2.prior is normal: down)
+
+tip: use "width = ?%" to adjust the element with "float"
+
+
+-->

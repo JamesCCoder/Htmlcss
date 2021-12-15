@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <title>Welcome to Bethany's pie shop!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header id="mainheader">
+        <nav>
+            <!--<img src="images/pie.png" height="55"> --> 
+            <ul>
+                <li><img src="images/cake.svg" height="55" /></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pieoverview.html">All pies</a></li>
+            </ul>
+            
+            
+        </nav>
+   </header>
+   <div style="width:1000px;margin-left:auto;margin-right:auto;">   <!--div is just for layout, no words, no color   -->
+       <aside id="leftmenu">                                        <!--here is the way of layouts divided into two parts, this way is replaced by flexbox-->
+             <a href = "index.html"><img src="images/bethanylogo.png"/></a>
+             <header>                       
+                 <h4 style="text-align:center;">Browse our pies</h4>
+             </header>
+             <ul>
+                 <li><a href="pieoverview.html">All pies</a></li>
+                 <li><a href="cheesecakes.html">Cheese cakes</a></li>
+                 <li><a href="fruitpies.html">Fruit pies</a></li>
+                 <li><a href="seasonalpies.html">Seasonal pies</a></li>
+                 <li><a href="#promos">Promotions</a></li>
+             </ul>
+             <a href="pieoverview.html">All pies</a>
+             <input type="search" class="searchbox" placeholder="Search our store"/>
+       </aside>
+       <main id="main">
+        <article>
+              <header>
+                <h1 style="font-size:40px; color:#a593c2">Welcome to Bethany's pie shop!</h1>
+              </header>
+              
+              <figure>
+                  <img src="images/bethany.jpg" width="700" alt="Bethany in her pie shop"/>
+                  <figcaption>Bethany in her pie shop</figcaption>
+              </figure>
+              <h2>Our history</h2>
+              <p>
+                For many years, <b>Bethany</b> has been baking the most delicious pies at her home. <br><br>In 2013, we opened our first
+                store in <i>Brussels (Belgium)</i> in a cosy little street near the Grand Market. People from all over the world fell in love
+                with the soft cakes, heavenly cheese cakes, spicy apple pies... The store became a success in no time.
+                <br><br>In 2015, no less than 100 pies were sold every day and Bethany's Pie Shop moved into a larger building.
+                After receiving many requests, it became clear that our next step was making it possible to order pies from the
+                comfort of your own home and from anywhere in the world. You are now looking at the result of this: our very own
+                webstore, making it possible to order Bethany's delicious pies whenever you feel like it!
+            </p>
+            <p>
+                Bethany is famousfor using only the best ingredients. This way, we can make sure that our pies are absolutely the best.
+            </p>
+          </article>
+          <section id="promos">                                <!-- two elements are in the main: article and section-->
+            <h3>Our weekly promotion</h3>          <!-- main is floated, so both of the will be-->
+            <h4>Cheese cake</h4>
+            $12.95 - serves 4<br>
+            <img src="cheesecake.jpg" width="500" height="300"/>
+          </section>
+       </main>
+       <footer>
+           <p>our address is:<address>1111 eee eee dr</address></p>
+           <p>Contact us via <a href="mailto:info@gmail.com">email</a></p>
+        <small>&copy;2020 Bethany's Pie Shop - All rights reserved</small>
+       </footer>
+    </div>
+
+</body>
+</html>
+
+<!--
+     
+rules of float
+
+1. float makes element be out of "normal flow"
+2. first floating element will just be down the prior element
+3. second floating element will just follow the first one(right -> down)
+4. the rest elements that not floated will follow the original rules
+
+all: float element: start point from (1. prior is float: right-> down  2.prior is normal: down)
+
+tip: use "width = ?%" to adjust the element with "float"
+
+
+-->
